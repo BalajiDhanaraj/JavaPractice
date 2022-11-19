@@ -13,8 +13,8 @@ public class Const {
         Dog set = new Dog("balaji ",23);
         System.out.println(set.name+" "+set.age);
 
-        Dog def = new Dog();
-        System.out.println(def.name+" "+def.age);
+//        Dog def = new Dog();
+//        System.out.println(def.name+" "+def.age);
 
 
     }
