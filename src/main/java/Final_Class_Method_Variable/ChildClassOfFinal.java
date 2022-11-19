@@ -9,7 +9,7 @@ public class ChildClassOfFinal extends ParentClassOfFinalAnimal {
     }
 
     public void childEatingNow(){
-        System.out.println("Child is eating nwo");
+        System.out.println("Child is eating nwo")
     }
 
 
