@@ -8,6 +8,11 @@ public class Dog {
 //        System.out.println("I'm defautl constructor");
 //    }
 
+      public Dog(){
+          name = "mani";
+          age = 24;
+      }
+
 //    public Dog(String name){
 //        this.name = name;
 //    }
