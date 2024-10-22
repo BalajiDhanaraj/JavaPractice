@@ -3,20 +3,24 @@
 import java.util.*;
 class HelloWorld {
     public static void main(String[] args) {
-      Scanner input = new Scanner(System.in);
+       Scanner input = new Scanner(System.in);
       System.out.println("Enter the number");
+      int num = input.nextInt();
       int a = 0;
       int b = 1;
       int count = 2;
 
       while(count<=num){
+        // we storing the b in temp --> 1 <-- = 1
         int temp = b;
-        int b = b + a;
-        int a = temp;
-
+        // b = b+a --> b = 1 + 0 --> so b = 1 now
+        b = b + a;
+        // now we reassgin the a = temp , 1 <-- = 1
+        a = temp;
+        // count will increase until num
         count++;
       }
       
-      system.out.println(b);
+      System.out.println(b);
     }
 }
