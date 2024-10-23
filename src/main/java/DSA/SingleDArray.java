@@ -1,4 +1,5 @@
 // Online Java Compiler
+// Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 import java.util.*;
 import java.util.ArrayList;
@@ -59,26 +60,34 @@ class SingleDArray {
         return max;
     }
     
+    static int[] reverse(int[] arr) {
+        int start = 0;
+        int end = arr.length-1;
+
+        while (start < end) {
+            // swap
+            swap(arr, start, end);
+            start++;
+            end--;
+        }
+        
+        return arr;
+    }
+    static void swap(int[] arr, int index1, int index2) {
+        int temp = arr[index1];
+        arr[index1] = arr[index2];
+        arr[index2] = temp;
+    }
+    
    
     public static void main(String[] args) {
         SingleDArray ref = new SingleDArray();
-       Scanner input = new Scanner(System.in);
-       
-       //ref.basicArray();
+        ref.basicArray();
     
-        int[] a = new int[]{1,5,11,100,2,4};
-        System.out.println("max with start and end range"+maxRange(a,2,5));
-        System.out.println("max"+max(a));
-    //   ArrayList<Integer> list = new ArrayList<>(5);
-       
-    //   System.out.println("Enter the list of items");
-    //   for(int i=0;i<list.size();i++){
-    //       list.add(input.nextInt());
-    //   }
-    
-    //     for(int j=0;j<list.size();j++){
-    //       System.out.println("list of items "+list.get(j));
-    //   }
-       
+        int[] arr = new int[]{1,5,11,100,2,4};
+        System.out.println("max with start and end range"+maxRange(arr,2,5));
+        System.out.println("max"+max(arr));
+        arr = reverse(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
