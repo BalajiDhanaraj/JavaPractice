@@ -14,7 +14,7 @@
     
     char target = SmallestLetter(letter,'e');
     
-    System.out.println("FindFirstAndLastPos "+target);
+    System.out.println("BinarySearch.FindFirstAndLastPos "+target);
     
     
     }

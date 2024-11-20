@@ -1,4 +1,6 @@
-    import java.util.*;
+package BinarySearch;
+
+import java.util.*;
     import java.lang.*;
     import java.io.*;
     
@@ -11,7 +13,7 @@
     int[] arr = {99,88,66,55,10,8,4,2};
     int target = 4;
     int ans = OrderAgnosticBinarySearch(arr,target); 
-    System.out.println("binarySearch "+ans);
+    System.out.println("BinarySearch.binarySearch "+ans);
     
     }
     

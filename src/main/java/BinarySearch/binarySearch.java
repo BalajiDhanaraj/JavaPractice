@@ -1,3 +1,5 @@
+package BinarySearch;
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -11,7 +13,7 @@ public class binarySearch {
         int[] arr = {-1,0,2,4,6,8,10,12,14,16};
         int target = 10;
         int ans = binarySearch(arr,target); 
-        System.out.println("binarySearch "+ans);
+        System.out.println("BinarySearch.binarySearch "+ans);
         
         
     }

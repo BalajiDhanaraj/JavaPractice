@@ -1,4 +1,6 @@
-    import java.util.*;
+package BinarySearch;
+
+import java.util.*;
     import java.lang.*;
     import java.io.*;
     
@@ -12,7 +14,7 @@
     int target = 4;
     
     int[] val = FindFirstAndLastPos(arr,target); 
-    System.out.println("FindFirstAndLastPos "+Arrays.toString(val));
+    System.out.println("BinarySearch.FindFirstAndLastPos "+Arrays.toString(val));
     
     
     }

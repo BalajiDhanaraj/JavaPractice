@@ -1,4 +1,6 @@
-    import java.util.*;
+package BinarySearch;
+
+import java.util.*;
     import java.lang.*;
     import java.io.*;
     
@@ -12,7 +14,7 @@
     int target = 15;
     
     int ans = BinarySearchCeilingNumber(arr,target); 
-    System.out.println("binarySearch "+ans);
+    System.out.println("BinarySearch.binarySearch "+ans);
     
     }
     
