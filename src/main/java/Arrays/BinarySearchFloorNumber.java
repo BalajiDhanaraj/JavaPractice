@@ -3,7 +3,7 @@
     import java.io.*;
     
     // The main method must be in a class named "Main".
-    public class Main {
+    public class BinarySearchFloorNumber {
     
     
     public static void main(String[] args) {

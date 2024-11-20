@@ -4,7 +4,7 @@ package Arrays;// Online Java Compiler
 import java.util.*;
 import java.util.ArrayList;
 class SingleDArray {
-    
+   //
     
     public void basicArray(){
         Scanner input = new Scanner(System.in);
