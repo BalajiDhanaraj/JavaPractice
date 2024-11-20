@@ -1,3 +1,5 @@
+package Arrays;
+
 import java.util.*;
 import java.lang.*;
 import java.io.*;
@@ -5,7 +7,7 @@ import java.io.*;
 // The main method must be in a class named "Main".
 class EvenNum {
 
-    static int EvenNum(int[] arr){
+    static int EvenNums(int[] arr){
 
         int count =0;
         for (int nums : arr) {
@@ -48,13 +50,13 @@ class EvenNum {
         return count; 
     }
 
- static int digit(int nums){
-
-        if(nums<0){
-            nums = nums * -1;
-        }
-        return (int)(Math.log10(nums))+1; 
-    }
+//// static int digit(int nums){
+//
+//        if(nums<0){
+//            nums = nums * -1;
+//        }
+//        return (int)(Math.log10(nums))+1;
+//    }
 
 
     
@@ -62,7 +64,7 @@ class EvenNum {
 
         int[] arr = {12, 5, 1234, 123456};
             
-         int EvenDig = EvenNum(arr);
+         int EvenDig = EvenNums(arr);
         System.out.println("EvenDig "+EvenDig);
         
     }
