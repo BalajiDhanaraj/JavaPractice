@@ -1,3 +1,5 @@
+package Sorting;
+
 import java.util.*;
 
 public class findDuplicates {
@@ -5,7 +7,7 @@ public class findDuplicates {
      public static void main(String[] args) {
       
       int[] arr = {1,1,2,3,4,2};
-      //findDuplicates(arr);
+      //Sorting.findDuplicates(arr);
       List<Integer> dupVal = findDuplicates(arr);
       System.out.println(dupVal);
       //System.out.println(Arrays.toString(arr));

@@ -1,4 +1,6 @@
-    import java.util.*;
+package DSA;
+
+import java.util.*;
     import java.lang.*;
     import java.io.*;
     import java.util.Scanner;
@@ -17,7 +19,7 @@
 // Return the array ans.
 
 
-    public class Main {
+    public class ConcatenationLTC {
       
     
     public static void main(String[] args) {
@@ -53,15 +55,15 @@
         return ans;
     }
     
-      public static int[] getConcatenation(int[] nums) {
-      int ans[] = new int[(nums.length)*2];
-      int n = nums.length;
-      for(int i=0;i<nums.length;i++) {
-      ans[i] = nums[i];
-      ans[n+i] = nums[i];
-      }
-      return ans;
-      }
+//      public static int[] getConcatenation(int[] nums) {
+//      int ans[] = new int[(nums.length)*2];
+//      int n = nums.length;
+//      for(int i=0;i<nums.length;i++) {
+//      ans[i] = nums[i];
+//      ans[n+i] = nums[i];
+//      }
+//      return ans;
+//      }
       
 
    

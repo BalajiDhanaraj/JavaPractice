@@ -25,7 +25,7 @@ public class findDisappearedNumbers {
      public static void main(String[] args) {
                  //0,1,2,3,4,5,6,7
       int[] arr = {1,1};
-      //findDuplicates(arr);
+      //Sorting.findDuplicates(arr);
       List<Integer> missing = findDisappearedNumbers(arr);
       System.out.println(missing);
       //System.out.println(Arrays.toString(arr));

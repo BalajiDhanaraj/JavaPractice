@@ -1,6 +1,8 @@
+package Sorting;
+
 import java.util.*;
 
-public class Main {
+public class CyclicSort {
   
   
     public static void main(String[] args) {
@@ -9,7 +11,7 @@ public class Main {
       
       //BubbleSort(arr);
       //SelectionSort(arr);
-      //InsertionSort(arr);
+      //Sorting.InsertionSort(arr);
       CyclicSort(arr);
       System.out.println(Arrays.toString(arr));
       

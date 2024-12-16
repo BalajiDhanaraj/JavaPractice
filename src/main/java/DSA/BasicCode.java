@@ -3,7 +3,7 @@
     import java.io.*;
     import java.util.Scanner;
     // The main method must be in a class named "Main".
-    public class Main {
+    public class BasicCode {
       
     
     public static void main(String[] args) {
