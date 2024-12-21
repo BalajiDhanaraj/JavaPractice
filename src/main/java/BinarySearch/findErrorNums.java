@@ -1,5 +1,3 @@
-package BinarySearch;
-
 import java.util.*;
 
 public class findErrorNums {
@@ -15,6 +13,7 @@ public class findErrorNums {
 
 // Find the number that occurs twice and the number that is missing and return them in the form of an array.
 
+ 
 
 // Example 1:
 
@@ -24,59 +23,57 @@ public class findErrorNums {
 
 // Input: nums = [1,1]
 // Output: [1,2]
-
-    public static void main(String[] args) {
-        //0,1,2,3,4,5,6,7
-        //-1,1,3,4
-        int[] arr = {1, 1};
-        int[] val = findErrorNums(arr);
-        // List<Integer> missing = findDisappearedNumbers(arr);
-        // System.out.println(missing);
-        System.out.println(Arrays.toString(val));
-
-    }
-
-
-    public static int[] findErrorNums(int[] arr) {
-
-
+  
+     public static void main(String[] args) {
+                 //0,1,2,3,4,5,6,7
+                 //-1,1,3,4
+      int[] arr = {1,1};
+      int[] val = findErrorNums(arr);
+      // List<Integer> missing = findDisappearedNumbers(arr);
+      // System.out.println(missing);
+      System.out.println(Arrays.toString(val));
+      
+  }
+          
+  
+  public static int[] findErrorNums(int[] arr) {
+        
+                              
         int i = 0;
-
+        
         //0,1,2,3,4,5,6,7
         //1,2,3,4,5
-
-        while (i < arr.length) {
-
-            int correct = arr[i] - 1;
-
-            if (arr[i] != arr[correct]) {
-                Swap(arr, i, correct);
-            } else {
-                i++;
-            }
-
+     
+       while(i<arr.length){
+         
+        int correct = arr[i]-1;
+        
+        if (arr[i]!=arr[correct]){
+          Swap(arr,i,correct);
+        }else{
+          i++;
         }
-
+         
+       }
+       
         //{4,3,2,7,8,2,3,1};
-        //0,1,2,3,4,5,6,7
-        //1,2,2,4
-
-        for (int index = 0; index < arr.length; index++) {
-            if (arr[index] != index + 1) {
-                return new int[]{arr[index], index + 1};
+       //0,1,2,3,4,5,6,7
+       //1,2,2,4
+       
+       for (int index = 0; index < arr.length; index++) {
+            if (arr[index] != index+1) {
+                return new int[]{arr[index],index+1};
             }
         }
-
-        return new int[]{-1, -1};
-
+       
+      return  new int[]{-1,-1};
+     
     }
-
-    public static void Swap(int[] arr, int first, int second) {
-
-        int temp = arr[first];
-        arr[first] = arr[second];
-        arr[second] = temp;
-
+    
+         public static void Swap(int[] arr, int first,int second){
+      
+      int temp = arr[first];
+      arr[first] = arr[second];
+      arr[second] = temp;
+      
     }
-
-}
