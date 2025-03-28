@@ -69,6 +69,17 @@ public class firstMissingPositive {
                return index+1;
             }
         }
+
+     //or the below code will find the exact position of the missing number
+
+       for (int index = 0; index < arr.length; index++) {
+            int val = arr[index+1]-arr[index];
+            if(val==2){
+              
+              return index+1;
+              
+            }
+        }
        
       return arr.length+1;
     }
